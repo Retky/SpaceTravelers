@@ -26,4 +26,11 @@ h1 {
 .ul {
   margin: 0;
   margin-left: auto;
+  list-style: none;
+  text-decoration: none;
+}
+
+.link {
+  text-decoration: none;
+  color: #3077ff;
 }
