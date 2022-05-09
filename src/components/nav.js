@@ -21,7 +21,7 @@ function Nav() {
           </NavLink>
           <NavLink
             className="link"
-            to="/"
+            to="/missions"
             style={({ isActive }) => ({
               textDecoration: isActive ? 'underline' : 'none',
               color: isActive ? '#194498' : 'inherit',
@@ -31,7 +31,7 @@ function Nav() {
           </NavLink>
           <NavLink
             className="link"
-            to="/"
+            to="/profile"
             style={({ isActive }) => ({
               textDecoration: isActive ? 'underline' : 'none',
               color: isActive ? '#194498' : 'inherit',
