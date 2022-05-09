@@ -4,7 +4,10 @@ function Nav() {
   return (
     <div>
       <nav>
-        <div><img src="../public/planet.png" alt="" /></div>
+        <div className="logo">
+          <img src="planet.png" alt="" width="100%" />
+        </div>
+        <h1>Space Travelers&apos; Hub</h1>
         <ul className="ul">
           <Link to="/">
             <li className="rocketslink">Rockets</li>
