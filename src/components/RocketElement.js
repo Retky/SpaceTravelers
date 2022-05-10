@@ -29,7 +29,10 @@ const RocketElement = (props) => {
       </div>
       <div>
         <h2>{name}</h2>
-        <p>{description}</p>
+        <p>
+          {(reserved) && (<span className="badge">Reserved</span>)}
+          {description}
+        </p>
         <button type="button" id={id} onClick={reserveRocketHandler}>{reservation}</button>
       </div>
     </div>

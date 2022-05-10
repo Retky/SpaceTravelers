@@ -9,3 +9,13 @@
 .rocketImg img {
   width: 250px;
 }
+
+.badge {
+  margin-right: 5px;
+  padding: 2px 5px;
+  background: #40b8bf;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
