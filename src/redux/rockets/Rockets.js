@@ -3,7 +3,7 @@ import fetchRockets from './api';
 const FETCHROCKETS = 'FETCHROCKETS';
 const initialState = [];
 
-const getRockets = () => async (dispatch) => {
+export const getRockets = () => async (dispatch) => {
   const newState = await fetchRockets();
   dispatch({
     type: FETCHROCKETS,
