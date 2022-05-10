@@ -15,7 +15,7 @@ function Nav() {
             to="/"
             style={({ isActive }) => ({
               textDecoration: isActive ? 'underline' : 'none',
-              color: isActive ? '#194498' : 'inherit',
+              color: isActive ? '#7fa9fa' : '#1f67f0',
             })}
           >
             <li className="rocketslink">Rockets</li>
@@ -25,7 +25,7 @@ function Nav() {
             to="/missions"
             style={({ isActive }) => ({
               textDecoration: isActive ? 'underline' : 'none',
-              color: isActive ? '#194498' : 'inherit',
+              color: isActive ? '#7fa9fa' : '#1f67f0',
             })}
           >
             <li className="missionslink">Missions</li>
@@ -35,7 +35,7 @@ function Nav() {
             to="/profile"
             style={({ isActive }) => ({
               textDecoration: isActive ? 'underline' : 'none',
-              color: isActive ? '#194498' : 'inherit',
+              color: isActive ? '#7fa9fa' : '#1f67f0',
             })}
           >
             <li className="profilelink">My Profile</li>

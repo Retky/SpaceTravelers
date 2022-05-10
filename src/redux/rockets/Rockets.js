@@ -34,7 +34,6 @@ const reducer = (state = initialState, action) => {
         }
         return { ...rocket, reserved: true };
       });
-      console.log(valState);
       return valState;
     }
     case UNRESERVEROCKET: {
@@ -44,7 +43,6 @@ const reducer = (state = initialState, action) => {
         }
         return { ...rocket, reserved: false };
       });
-      console.log(valState);
       return valState;
     }
     default:

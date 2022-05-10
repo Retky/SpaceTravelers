@@ -21,6 +21,7 @@ const RocketElement = (props) => {
     }
   };
   const reservation = reserved ? 'Cancel Reservation' : 'Reserve Rocket';
+  const btnClass = reserved ? 'grayBtn' : 'blueBtn';
 
   return (
     <div className="rocketEl">
@@ -33,7 +34,7 @@ const RocketElement = (props) => {
           {(reserved) && (<span className="badge">Reserved</span>)}
           {description}
         </p>
-        <button type="button" id={id} onClick={reserveRocketHandler}>{reservation}</button>
+        <button className={btnClass} type="button" id={id} onClick={reserveRocketHandler}>{reservation}</button>
       </div>
     </div>
   );
