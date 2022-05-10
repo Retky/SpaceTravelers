@@ -5,12 +5,15 @@ const RESERVEROCKET = 'RESERVEROCKET';
 const UNRESERVEROCKET = 'UNRESERVEROCKET';
 const initialState = [];
 
+let store = false;
 export const getRockets = () => async (dispatch) => {
   const newState = await fetchRockets();
+  if (store) return;
   dispatch({
     type: FETCHROCKETS,
     newState,
   });
+  store = true;
 };
 
 export const reserveRocket = (id) => ({
