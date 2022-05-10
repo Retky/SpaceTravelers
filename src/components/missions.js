@@ -5,7 +5,6 @@ import { showMissions } from '../redux/missions/Missions';
 function Missions() {
   const state = useSelector((state) => state.missions);
   const dispatch = useDispatch();
-  console.log(state);
 
   useEffect(() => {
     dispatch(showMissions());
@@ -23,10 +22,12 @@ function Missions() {
       </thead>
       {state.map((mission) => (
         <tbody key={mission.mission_id}>
+          <tr>
           <td>{mission.mission_name}</td>
           <td>{mission.description}</td>
-          <td><button>not a member</button></td>
-          <td><button>join mission</button></td>
+          <td><button type='button'>not a member</button></td>
+          <td><button type='button'>join mission</button></td>
+          </tr>
         </tbody>
       ))}
 

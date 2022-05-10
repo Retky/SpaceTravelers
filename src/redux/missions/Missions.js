@@ -1,4 +1,4 @@
-import { fetchMission } from './api';
+import fetchMission from './api';
 
 const GET_MISSION = 'MISSIONS_DISPLAYED';
 
