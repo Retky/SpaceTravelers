@@ -1,17 +1,26 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
 import PropTypes from 'prop-types';
-import { reserveRocket } from '../redux/rockets/Rockets';
+import { reserveRocket, unreserveRocket } from '../redux/rockets/Rockets';
 
 const RocketElement = (props) => {
   const dispatch = useDispatch();
   const {
-    id, name, description, flickrImages,
+    id, name, description, flickrImages, reserved,
   } = props;
 
-  const reserveRocketHandler = (e) => {
-    dispatch(reserveRocket(e.target.id));
+  RocketElement.defaultProps = {
+    reserved: false,
   };
+
+  const reserveRocketHandler = (e) => {
+    if (reserved) {
+      dispatch(unreserveRocket(e.target.id));
+    } else {
+      dispatch(reserveRocket(e.target.id));
+    }
+  };
+  const reservation = reserved ? 'Cancel Reservation' : 'Reserve Rocket';
 
   return (
     <div className="rocketEl">
@@ -21,7 +30,7 @@ const RocketElement = (props) => {
       <div>
         <h2>{name}</h2>
         <p>{description}</p>
-        <button type="button" id={id} onClick={reserveRocketHandler}>Reserve Rocket</button>
+        <button type="button" id={id} onClick={reserveRocketHandler}>{reservation}</button>
       </div>
     </div>
   );
@@ -30,6 +39,7 @@ const RocketElement = (props) => {
 RocketElement.propTypes = {
   id: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
+  reserved: PropTypes.bool,
   description: PropTypes.string.isRequired,
   flickrImages: PropTypes.string.isRequired,
 };
