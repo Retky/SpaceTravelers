@@ -6,17 +6,18 @@ import '../missions.css';
 const Missions = () => {
   const state = useSelector((state) => state.missions);
   const dispatch = useDispatch();
+  console.log(state);
 
   useEffect(() => {
     dispatch(showMissions());
   }, []);
+
 
   const joinmissionHandler = (e) => {
     const status = e.target.getAttribute('status');
     const id = e.target.getAttribute('id')
     dispatch(joinMissions(id, status));
   };
-
 
   return (
     <div>
