@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-// import './my-profile.css';
+import './my-profile.css';
 import { useSelector, useDispatch } from 'react-redux';
 import { getRockets } from '../redux/rockets/Rockets';
 import { showMissions } from '../redux/missions/Missions';
