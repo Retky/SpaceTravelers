@@ -1,0 +1,21 @@
+.profile {
+  border-top: solid #888 1px;
+  margin: 1px 40px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.profMissions,
+.profRockets {
+  margin: 0 15px;
+  flex-grow: 1;
+}
+
+.my {
+  padding: 0;
+}
+
+.MyReserved {
+  padding: 10px;
+  border: solid #ddd 1px;
+}
