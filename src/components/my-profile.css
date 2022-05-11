@@ -1,6 +1,6 @@
 .profile {
   border-top: solid #888 1px;
-  margin: 1px 40px 0;
+  margin: 40px;
   display: flex;
   justify-content: space-between;
 }
