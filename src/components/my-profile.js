@@ -20,7 +20,7 @@ const Profile = () => {
       <div className="profMissions">
         <h2>My Missions</h2>
         <ul className="my">
-        {filteredMissions.map((mission) => (
+          {filteredMissions.map((mission) => (
             <div className="MyReserved" key={mission.mission_id}>
               <h3>{mission.mission_name}</h3>
             </div>

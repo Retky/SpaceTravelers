@@ -45,7 +45,7 @@ const Missions = () => {
                   <button type="button" className="leaveMish" status={0} id={mission.mission_id} onClick={joinmissionHandler}>Leave Mission</button>
                 ) : (
                   <button type="button" className="joinMish" status={1} id={mission.mission_id} onClick={joinmissionHandler}>Join Mission</button>
-                  
+
                 )}
               </td>
 
