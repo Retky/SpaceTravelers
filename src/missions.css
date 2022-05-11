@@ -6,7 +6,7 @@ table {
 }
 
 td {
-  max-width: 900px;
+  max-width: 600px;
   border: 0.5px solid grey;
   padding-right: 5px;
   padding-left: 5px;
@@ -16,4 +16,38 @@ hr {
   width: 1300px;
   margin-bottom: 25px;
   margin-top: 25px;
+}
+
+.joinMish {
+  cursor: pointer;
+  background-color: #fff;
+  border: grey 2px solid;
+  color: grey;
+  border-radius: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.notmember {
+  background-color: grey;
+  border: grey 2px solid;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.btnmember {
+  background-color: #2596be;
+  border: #2596be 2px solid;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.leaveMish {
+  cursor: pointer;
+  background-color: #fff;
+  border: rgb(182, 6, 6) 2px solid;
+  color: rgb(182, 6, 6);
+  border-radius: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
