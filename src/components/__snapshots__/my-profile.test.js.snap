@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[` Missions Component Rendering  renders correctly 1`] = `
+<section
+  className="profile"
+>
+  <div
+    className="profMissions"
+  >
+    <h2>
+      My Missions
+    </h2>
+    <ul
+      className="my"
+    />
+  </div>
+  <div
+    className="profRockets"
+  >
+    <h2>
+      My Rockets
+    </h2>
+    <ul
+      className="my"
+    />
+  </div>
+</section>
+`;
+
+exports[` My Profile Component Rendering  renders correctly 1`] = `
+<section
+  className="profile"
+>
+  <div
+    className="profMissions"
+  >
+    <h2>
+      My Missions
+    </h2>
+    <ul
+      className="my"
+    />
+  </div>
+  <div
+    className="profRockets"
+  >
+    <h2>
+      My Rockets
+    </h2>
+    <ul
+      className="my"
+    />
+  </div>
+</section>
+`;
