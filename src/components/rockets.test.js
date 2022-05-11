@@ -7,8 +7,8 @@ describe('Rockets component', () => {
   test('component match with the snapshot', () => {
     const tree = renderer.create(
       <Provider store={store}>
-          <Rockets />
-        </Provider>,
+        <Rockets />
+      </Provider>,
     ).toJSON();
     expect(tree).toMatchSnapshot();
   });
