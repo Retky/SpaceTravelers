@@ -29,22 +29,6 @@ export default function missionsReducer(state = initialState, action) {
   }
 }
 
-// export const showMissions = () => async (dispatch) => {
-//   let missions;
-//   try {
-//     if (store) return;
-//     missions = await fetchMission();
-//     dispatch({
-//       type: GET_MISSION,
-//       payload: missions,
-//     });
-//     store = true;
-//   } catch (err) {
-//     return err;
-//   }
-//   return missions;
-// };
-
 export const showMissions = () => async (dispatch) => {
   const missions = await fetchMission();
   if (store) return;
