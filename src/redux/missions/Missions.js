@@ -5,6 +5,7 @@ const MISSION_JOINED = 'MISSION JOINED';
 const MISSION_LEFT = 'MISSION LEFT';
 
 const initialState = [];
+let store = false;
 
 export default function missionsReducer(state = initialState, action) {
   switch (action.type) {
@@ -31,11 +32,13 @@ export default function missionsReducer(state = initialState, action) {
 export const showMissions = () => async (dispatch) => {
   let missions;
   try {
+    if (store) return;
     missions = await fetchMission();
     dispatch({
       type: GET_MISSION,
       payload: missions,
     });
+    store = true;
   } catch (err) {
     return err;
   }
