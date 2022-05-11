@@ -12,7 +12,6 @@ const Missions = () => {
     dispatch(showMissions());
   }, []);
 
-
   const joinmissionHandler = (e) => {
     const status = e.target.getAttribute('status');
     const id = e.target.getAttribute('id')

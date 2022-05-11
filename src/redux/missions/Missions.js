@@ -11,6 +11,7 @@ export default function missionsReducer(state = initialState, action) {
     case GET_MISSION: return action.payload;
     case MISSION_JOINED: {
       const newState = state.map((mission) => {
+
         if (mission.mission_id !== action.payload.id) return mission;
         return { ...mission, reserved: action.payload.status };
       });
@@ -20,6 +21,14 @@ export default function missionsReducer(state = initialState, action) {
       const newState = state.map((mission) => {
         if (mission.mission_id == action.payload.id) return mission;
         return { ...mission, reserved: action.payload.status };
+
+      });
+      return [...newState];
+    } 
+    case MISSION_LEFT: {
+      const newState = state.map((mission) => {
+        if (mission.mission_id !== action.id) return mission;
+        return { ...mission, reserved: false };
       });
       return [...newState];
     } 
