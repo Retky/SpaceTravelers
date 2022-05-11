@@ -32,7 +32,7 @@
   padding: 10px 15px;
   background: #2e73fa;
   color: #fff;
-  border: none;
+  border: solid #2e73fa 1px;
   border-radius: 5px;
 }
 
