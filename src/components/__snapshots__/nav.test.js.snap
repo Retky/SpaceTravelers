@@ -1,0 +1,76 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Nav component component match with the snapshot 1`] = `
+<div>
+  <nav>
+    <div
+      className="logo"
+    >
+      <img
+        alt=""
+        src="planet.png"
+        width="100%"
+      />
+    </div>
+    <h1>
+      Space Travelers' Hub
+    </h1>
+    <ul
+      className="ul"
+    >
+      <a
+        aria-current="page"
+        className="link active"
+        href="/"
+        onClick={[Function]}
+        style={
+          Object {
+            "color": "#7fa9fa",
+            "textDecoration": "underline",
+          }
+        }
+      >
+        <li
+          className="rocketslink"
+        >
+          Rockets
+        </li>
+      </a>
+      <a
+        className="link"
+        href="/missions"
+        onClick={[Function]}
+        style={
+          Object {
+            "color": "#1f67f0",
+            "textDecoration": "none",
+          }
+        }
+      >
+        <li
+          className="missionslink"
+        >
+          Missions
+        </li>
+      </a>
+      <a
+        className="link"
+        href="/profile"
+        onClick={[Function]}
+        style={
+          Object {
+            "color": "#1f67f0",
+            "textDecoration": "none",
+          }
+        }
+      >
+        <li
+          className="profilelink"
+        >
+          My Profile
+        </li>
+      </a>
+    </ul>
+  </nav>
+</div>
+`;
