@@ -1,4 +1,4 @@
-# Mv-Bookstore
+# SpaceTravelers
 > Website to get information about space traveler rockets and missions, allowing the user to reserver rockets and joing missions.
 
 ## Preview
