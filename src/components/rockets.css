@@ -1,11 +1,45 @@
+.rocketsList {
+  margin: 40px;
+  border-top: solid #888 1px;
+  padding: 0;
+}
+
 .rocketEl {
   display: flex;
+  margin: 25px;
 }
 
 .rocketImg {
   width: 250px;
+  margin-right: 25px;
 }
 
 .rocketImg img {
   width: 250px;
+}
+
+.badge {
+  margin-right: 5px;
+  padding: 2px 5px;
+  background: #40b8bf;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.blueBtn {
+  padding: 10px 15px;
+  background: #2e73fa;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+
+.grayBtn {
+  padding: 10px 15px;
+  background: #fff;
+  color: #888;
+  border: solid #777 1px;
+  border-radius: 5px;
 }

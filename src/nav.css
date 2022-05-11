@@ -26,6 +26,11 @@ h1 {
   text-decoration: none;
 }
 
+.ul a:last-child {
+  padding-left: 15px;
+  border-left: solid #163a80 1px;
+}
+
 .link {
   text-decoration: none;
   color: #3077ff;
