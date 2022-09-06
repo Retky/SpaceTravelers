@@ -1,5 +1,5 @@
 # SpaceTravelers
-> Website to get information about space traveler rockets and missions, allowing the user to reserver rockets and joing missions.
+> Website to get information about space traveler rockets and missions, allowing the user to reserver or remove a rocket, join or leave a missions and see the rockets and missions wher he have already registered in.
 
 ## Preview
 [![image](https://user-images.githubusercontent.com/93499010/167954294-a047a483-3e73-4001-9c61-d81448cbf472.png)](https://space-travelers-648.netlify.app/)
